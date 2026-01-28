@@ -87,6 +87,29 @@ The format of the notes is outlined here in the [Git AI Standard v3.0.0](https:/
 | Google Antigravity                                                                         |            |         |
 
 
+## Development with Pi + Git-AI
+
+This repo supports **Pi** (multi-model AI agent) with automatic **git-ai** tracking:
+
+```bash
+# Fast Rust development with Pi (YOLO mode)
+pi -p "Add support for new agent framework"
+
+# View AI authorship
+git blame src/main.rs
+git-ai stats
+git-ai diff HEAD~1
+```
+
+**Why this combination**:
+- **Pi**: 372+ models, fast file operations perfect for agent development
+- **git-ai**: Self-referential (git extension that tracks AI code using git-ai itself!)
+- **Tracking**: Know which AI/model contributed to the git-ai codebase itself
+
+Read `.claude/pi-dev.md` for detailed development workflow.
+
+---
+
 > **Building a Coding Agent?** [Add support for Git AI by following this guide](https://usegitai.com/docs/cli/add-your-agent)
 
 ## Installing the Stats Bot (early access)
